@@ -18,22 +18,22 @@
             <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
             <p class="text-white-50 mb-5">Please enter your information to create account!</p>
             <div class="form-outline form-white mb-4">
-                <x-jet-label for="name" class="form-label" value="{{ __('Name') }}" />
+                <x-jet-label for="name" class="form-label fw-bold mb-2" value="{{ __('Name') }}" />
                 <x-jet-input id="name" class="form-control form-control-lg" type="text" name="name" :value="old('name')" placeholder="Enter your name" required autofocus autocomplete="name" />
             </div>
 
             <div class="form-outline form-white mb-4">
-                <x-jet-label for="email" class="form-label" value="{{ __('Email') }}" />
+                <x-jet-label for="email" class="form-label fw-bold mb-2" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="form-control form-control-lg" placeholder="Enter your email address" type="email" name="email" :value="old('email')" required />
             </div>
 
             <div class="form-outline form-white mb-4">
-                <x-jet-label class="form-label" for="password" value="{{ __('Password') }}" />
+                <x-jet-label class="form-label fw-bold mb-2" for="password" value="{{ __('Password') }}" />
                 <x-jet-input id="password" class="form-control form-control-lg" type="password" name="password" placeholder="Enter a password" required autocomplete="new-password" />
             </div>
 
             <div class="form-outline form-white mb-4">
-                <x-jet-label for="password_confirmation" class="form-label" value="{{ __('Confirm Password') }}" />
+                <x-jet-label for="password_confirmation" class="form-label fw-bold mb-2" value="{{ __('Confirm Password') }}" />
                 <x-jet-input id="password_confirmation" class="form-control form-control-lg" type="password" placeholder="Confirm your password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
